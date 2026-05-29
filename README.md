@@ -3,11 +3,19 @@
 ```text
 Versions:
    V0.7.0 
- -------------------
+ ___________________
 
    * Added Bash Scripts for faster and a more efficient way to commit to github
    * Added a useShare-Hook for easier sharing of text, URls and more!
-
+ ___________________
+  
+ V0.7.5
+ ___________________
+   
+   * Added a share button, so the user is able to share the site
+   * Added a universal useShare-Hook for sharing multiple types of text/URls.
+ ___________________
+ 
 ```
 
 # Hooks
@@ -63,3 +71,6 @@ shareCurrentUrl({
 });
 ```
 
+##
+
+#

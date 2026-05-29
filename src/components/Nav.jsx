@@ -10,7 +10,7 @@ export default function Navbar() {
       {/* Desktop Navbar */}
       <nav className="hidden sm:flex items-center justify-between px-6 py-4 bg-slate-900 border-b border-slate-800">
         <h1 className="text-xl font-bold text-white">
-          Eleven Shanghai
+          ELEVEN (Shanghai)
         </h1>
 
         <div className="flex gap-6">
@@ -31,7 +31,7 @@ export default function Navbar() {
       {/* Mobile Navbar */}
       <nav className="sm:hidden flex items-center justify-between px-4 py-4 bg-slate-900 border-b border-slate-800">
         <h1 className="text-lg font-bold text-white">
-          Eleven Shanghai
+          ELEVEN (Shanghai)
         </h1>
 
         <button

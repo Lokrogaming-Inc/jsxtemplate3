@@ -1,10 +1,12 @@
 import {
      Sparkles,
+     Share2,
        } from 'lucide-react';
-
+import { useShare } from '../hooks/useShare';
 
 
 export default function Hero() {
+  const { shareCurrentUrl } = useShare();
   return (
     <section className="py-32">
       <div className="max-w-7xl mx-auto px-6 text-center">
@@ -25,10 +27,19 @@ export default function Hero() {
           <button className="bg-[#111] border-black border transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-black hover:text-white text-slate-400 px-6 py-3 rounded-xl">
             Get in Touch
           </button>
-
+          <button onClick={() =>
+        shareCurrentUrl({
+          title: "Eleven (Shanghai)",
+          text: "From the first sketch to the last brick",
+        })
+      } 
+  className="text-black text-lg transition duration-150 ease-in-out hover:scale-105 hover:border-b hover:border-black"
+       ><Share2 />
+</button> 
           <button className="border border-black-700 text-black px-6 py-3 rounded-xl">
             Learn More
-          </button>
+         </button>
+
         </div>
 
       </div>
