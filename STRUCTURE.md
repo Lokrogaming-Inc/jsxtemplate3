@@ -19,6 +19,7 @@
 │   │   ├── App.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Hero.jsx
+│   │   ├── HeroBackground.jsx
 │   │   ├── Nav.jsx
 │   │   ├── Navbar.jsx
 │   │   └── Ticker.jsx
@@ -35,8 +36,8 @@
 ├── update-readme.sh
 └── vite.config.js
 
-6 directories, 28 files
+6 directories, 29 files
 ```
 
 
-🕒 Last update: 2026-05-29 22:15:50
+🕒 Last update: 2026-05-30 13:01:07

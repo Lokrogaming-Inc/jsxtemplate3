@@ -7,8 +7,11 @@ import { useShare } from '../hooks/useShare';
 
 export default function Hero() {
   const { shareCurrentUrl } = useShare();
-  return (
-    <section className="py-32">
+  return (   
+ <section className="py-32">
+      
+
+
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         <span className="bg-transparent gap-3 flex flex-row border border-black shadow-sm shadow-black-300 text-black-700 px-4 py-2 rounded-full">

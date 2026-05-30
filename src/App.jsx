@@ -9,7 +9,8 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <BrowserRouter>
-<div className="min-h-screen bg-[yellow]">
+<div className="min-h-screen bg-primary">
+
       
 
         <Nav />

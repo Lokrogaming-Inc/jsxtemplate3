@@ -8,28 +8,28 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden sm:flex items-center justify-between px-6 py-4 bg-slate-900 border-b border-slate-800">
+      <nav className="hidden sm:flex items-center justify-between px-6 py-4 bg-black border-b border-[yellow]">
         <h1 className="text-xl font-bold text-white">
           ELEVEN (Shanghai)
         </h1>
 
         <div className="flex gap-6">
-          <Link to="/" className="text-slate-300 hover:text-white">
+          <Link to="/" className="text-[yellow] hover:text-white">
             Home
           </Link>
 
-          <Link to="/projects" className="text-slate-300 hover:text-white">
+          <Link to="/projects" className="text-[yellow] hover:text-white">
             Projects
           </Link>
 
-          <Link to="/contact" className="text-slate-300 hover:text-white">
+          <Link to="/contact" className="text-[yellow] hover:text-white">
             Contact
           </Link>
         </div>
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className="sm:hidden flex items-center justify-between px-4 py-4 bg-slate-900 border-b border-slate-800">
+      <nav className="sm:hidden flex items-center justify-between px-4 py-4 bg-black border-b border-[yellow]">
         <h1 className="text-lg font-bold text-white">
           ELEVEN (Shanghai)
         </h1>
@@ -55,8 +55,8 @@ export default function Navbar() {
         className={`
           fixed top-0 right-0
           h-full w-72
-          bg-slate-900
-          border-l border-slate-800
+          bg-black
+          border-l border-[yellow]
           z-50
           transition-transform duration-300
           ${open ? "translate-x-0" : "translate-x-full"}
@@ -79,7 +79,7 @@ export default function Navbar() {
           <Link
             to="/"
             onClick={() => setOpen(false)}
-            className="text-slate-300 hover:text-white"
+            className="text-[yellow] hover:text-white"
           >
             Home
           </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
           <Link
             to="/projects"
             onClick={() => setOpen(false)}
-            className="text-slate-300 hover:text-white"
+            className="text-[yellow] hover:text-white"
           >
             Projects
           </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
           <Link
             to="/contact"
             onClick={() => setOpen(false)}
-            className="text-slate-300 hover:text-white"
+            className="text-[yellow] hover:text-white"
           >
             Contact
           </Link>
