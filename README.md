@@ -2,7 +2,7 @@
 ![Logo](/public/logo.png)
 
 ![Stars](https://img.shields.io/github/stars/Lokrogaming/eleven-shanghai) &nbsp;
-![Languages](https://img.shields.io/github/languages/count/Lokrogamimg/eleven-shanghai) &nbsp;
+![Languages](https://img.shields.io/github/languages/count/Lokrogaming/eleven-shanghai) &nbsp;
 ![Top Language](https://img.shields.io/github/languages/top/Lokrogaming/eleven-shanghai) &nbsp;
 ![Last Commit](https://img.shields.io/github/last-commit/Lokrogaming/eleven-shanghai) &nbsp;
 
