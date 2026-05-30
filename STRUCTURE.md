@@ -13,6 +13,9 @@
 │   ├── icons.svg
 │   └── logo.png
 ├── push.sh
+├── screenshot.mjs
+├── screenshots
+│   └── home.png
 ├── src
 │   ├── App.css
 │   ├── App.jsx
@@ -33,12 +36,13 @@
 │       ├── Contact.jsx
 │       ├── Home.jsx
 │       └── NotFound.jsx
+├── take-screenshot.sh
 ├── todo.md
 ├── update-readme.sh
 └── vite.config.js
 
-6 directories, 30 files
+7 directories, 33 files
 ```
 
 
-🕒 Last update: 2026-05-30 20:56:30
+🕒 Last update: 2026-05-30 23:02:40

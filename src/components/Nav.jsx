@@ -84,30 +84,35 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col p-4 gap-4">
-          <Link
-            to="/"
-            onClick={() => setOpen(false)}
-            className="text-[yellow] hover:text-white"
-          >
-            Home
-          </Link>
 
-          <Link
-            to="/projects"
-            onClick={() => setOpen(false)}
-            className="text-[yellow] hover:text-white"
-          >
-            Projects
-          </Link>
+  <Link
+    to="/"
+    onClick={() => setOpen(false)}
+    className="relative w-fit text-[yellow] hover:text-white transition-colors duration-300 group"
+  >
+    Home
+    <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+  </Link>
 
-          <Link
-            to="/contact"
-            onClick={() => setOpen(false)}
-            className="text-[yellow] hover:text-white"
-          >
-            Contact
-          </Link>
-        </div>
+  <Link
+    to="/projects"
+    onClick={() => setOpen(false)}
+    className="relative w-fit text-[yellow] hover:text-white transition-colors duration-300 group"
+  >
+    Projects
+    <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+  </Link>
+
+  <Link
+    to="/contact"
+    onClick={() => setOpen(false)}
+    className="relative w-fit text-[yellow] hover:text-white transition-colors duration-300 group"
+  >
+    Contact
+    <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+  </Link>
+
+</div>
       </div>
     </>
   );

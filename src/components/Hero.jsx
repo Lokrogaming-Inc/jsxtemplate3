@@ -24,12 +24,13 @@ export default function Hero() {
     rounded-full
     px-4
     py-2
+    w-30
   "
 >
   <img
     src="/logo.png"
     alt="Eleven Logo"
-    className="h-10 w-auto"
+    className="h-5 w-auto"
   />
 </span>
 
@@ -54,9 +55,51 @@ export default function Hero() {
   className="text-black text-lg transition duration-150 ease-in-out hover:scale-105 hover:border-b hover:border-black"
        ><Share2 />
 </button> 
-          <button className="border border-black-700 text-black px-6 py-3 rounded-xl">
-            Learn More
-         </button>
+          
+
+<button
+  className="
+    relative
+    overflow-hidden
+    border
+    border-black
+    px-6
+    py-3
+    rounded-xl
+    group
+    hover:scale-110
+    transition-transform
+    duration-300
+    ease-in-out
+  "
+>
+  <div
+  className="
+    absolute
+    inset-0
+    bg-gradient-to-r
+    from-[#333]
+    to-black
+    origin-left
+    scale-x-0
+    transition-transform
+    duration-300
+    group-hover:scale-x-100
+  "
+/>
+
+  <span
+    className="
+      relative
+      z-10
+      transition-colors
+      duration-1000
+      group-hover:text-white
+    "
+  >
+    Learn More
+  </span>
+</button>
 
         </div>
 
