@@ -1,0 +1,23 @@
+[
+  {
+    "id": "max",
+    "name": "Max Mustermann",
+    "role": "(Not) CEO",
+    "description": "Welcome to my Life!",
+    "phone": "+49 15112345678",
+    "email": "max@example.com",
+    "country": "CN",
+    "icon": "User",
+    "status": "verified"
+  },
+  {
+    "id": "john",
+    "name": "John Doe",
+    "role": "Developer",
+    "description": "I don't know what to say, so I'm writing this",
+    "email": "lokrogamer.29@gmail.com",
+    "country": "DE",
+    "icon": "User",
+    "status": "nA"
+  }
+]

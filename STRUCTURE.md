@@ -21,12 +21,16 @@
 │   ├── App.jsx
 │   ├── components
 │   │   ├── App.jsx
+│   │   ├── ContactSkeleton.jsx
+│   │   ├── Divider.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Hero.jsx
 │   │   ├── HeroBackground.jsx
 │   │   ├── Nav.jsx
 │   │   ├── Navbar.jsx
 │   │   └── Ticker.jsx
+│   ├── data
+│   │   └── json
 │   ├── hooks
 │   │   └── useShare.jsx
 │   ├── index.css
@@ -35,14 +39,15 @@
 │       ├── About.jsx
 │       ├── Contact.jsx
 │       ├── Home.jsx
-│       └── NotFound.jsx
+│       ├── NotFound.jsx
+│       └── Team.jsx
 ├── take-screenshot.sh
 ├── todo.md
 ├── update-readme.sh
 └── vite.config.js
 
-7 directories, 33 files
+9 directories, 36 files
 ```
 
 
-🕒 Last update: 2026-05-30 23:26:47
+🕒 Last update: 2026-05-31 01:51:37

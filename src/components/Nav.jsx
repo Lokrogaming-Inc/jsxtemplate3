@@ -17,17 +17,45 @@ export default function Navbar() {
 /></Link>
 
         <div className="flex gap-6">
-          <Link to="/" className="text-[yellow] hover:text-white">
-            Home
-          </Link>
+          <Link
+      to="/"
+      className="relative text-[yellow] transition-colors duration-300 hover:text-white group"
+    >
+      Home
+      <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+    </Link>
 
-          <Link to="/projects" className="text-[yellow] hover:text-white">
-            Projects
-          </Link>
+    <Link
+      to="/projects"
+      className="relative text-[yellow] transition-colors duration-300 hover:text-white group"
+    >
+      Projects
+      <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+    </Link>
 
-          <Link to="/contact" className="text-[yellow] hover:text-white">
-            Contact
-          </Link>
+    <Link
+      to="/about"
+      className="relative text-[yellow] transition-colors duration-300 hover:text-white group"
+    >
+      About us
+      <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+    </Link>
+
+    <Link
+      to="/team"
+      className="relative text-[yellow] transition-colors duration-300 hover:text-white group"
+    >
+      Our Team
+      <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+    </Link>
+
+    <Link
+      to="/contact"
+      className="relative text-[yellow] transition-colors duration-300 hover:text-white group"
+    >
+      Contact
+      <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+    </Link>
         </div>
       </nav>
 
@@ -111,7 +139,14 @@ export default function Navbar() {
     Contact
     <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
   </Link>
-
+  <Link
+    to="/team"
+    onClick={() => setOpen(false)}
+    className="relative w-fit text-[yellow] hover:text-white transition-colors duration-300 group"
+  >
+    Our Team
+    <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-yellow-300 origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100" />
+  </Link>
 </div>
       </div>
     </>
