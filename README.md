@@ -38,13 +38,15 @@ Versions:
  
 ```
 
-| Name      | Rolle        | Status   |
+| Version      | Key-Features | Date   | Supported
 |-----------|--------------|----------|
-| Eleven    | Agency       | Active   |
-| Shanghai  | Project      | Beta     |
-| Vercel    | Deployment   | Online   |
+| V0.7.0    | Initial Commit       | 28.5.2026   | :checkmark: |
+| V0.7.5  | useShare-Hook      | 29.5.2026 | :checkmark: |
+| V0.8.0 | Updated Hero, Contact-Page and README-File | :checkmark: |
 
-## Picture Gallery (since last commit)
+
+
+ last commit)
 ![screenshot](/screenshots/home.png)
 
 
