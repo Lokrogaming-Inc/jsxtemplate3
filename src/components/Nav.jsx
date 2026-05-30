@@ -9,9 +9,12 @@ export default function Navbar() {
     <>
       {/* Desktop Navbar */}
       <nav className="hidden sm:flex items-center justify-between px-6 py-4 bg-black border-b border-[yellow]">
-        <h1 className="text-xl font-bold text-white">
-          ELEVEN (Shanghai)
-        </h1>
+<Link to="/">        
+      <img
+  src="/logo.png"
+  alt="Eleven"
+  className="h-10 w-auto"
+/></Link>
 
         <div className="flex gap-6">
           <Link to="/" className="text-[yellow] hover:text-white">
@@ -30,9 +33,14 @@ export default function Navbar() {
 
       {/* Mobile Navbar */}
       <nav className="sm:hidden flex items-center justify-between px-4 py-4 bg-black border-b border-[yellow]">
-        <h1 className="text-lg font-bold text-white">
-          ELEVEN (Shanghai)
-        </h1>
+
+<Link to="/">        
+<img
+  src="/logo.png"
+  alt="Eleven"
+  className="h-10 w-auto"
+/>
+</Link>
 
         <button
           onClick={() => setOpen(true)}

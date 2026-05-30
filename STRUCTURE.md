@@ -10,7 +10,8 @@
 ├── package.json
 ├── public
 │   ├── favicon.svg
-│   └── icons.svg
+│   ├── icons.svg
+│   └── logo.png
 ├── push.sh
 ├── src
 │   ├── App.css
@@ -36,8 +37,8 @@
 ├── update-readme.sh
 └── vite.config.js
 
-6 directories, 29 files
+6 directories, 30 files
 ```
 
 
-🕒 Last update: 2026-05-30 13:16:45
+🕒 Last update: 2026-05-30 13:37:19
