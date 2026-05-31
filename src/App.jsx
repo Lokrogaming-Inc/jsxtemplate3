@@ -10,7 +10,7 @@ import Team from "./pages/Team";
 export default function App() {
   return (
     <BrowserRouter>
-<div className="min-h-screen bg-gradient-to-b from-amber-500 to-yellow-300">
+<div className="min-h-screen bg-gradient-to-t from-amber-500 to-yellow-300">
 
       
 
