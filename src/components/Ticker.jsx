@@ -35,7 +35,7 @@ export default function Ticker() {
     <div className="overflow-hidden bg-slate-900 border-y border-slate-800 py-4">
       <div className="flex w-max animate-ticker">
 
-        {[...items, ...items].map((item, index) => {
+        {[...items, ...items, ...items].map((item, index) => {
           const Icon = item.icon;
 
           return (
