@@ -60,9 +60,10 @@ jobs:
             fullPage: true
           });
 
-          await page.goto('http://localhost:3000/team', {
-            waitUntil: 'networkidle'
-          });
+          await page.click('a[href="/team"]');
+await page.screenshot({
+  path: 'screenshots/debug.png'
+});
 
           await page.screenshot({
             path: 'screenshots/team.png',
