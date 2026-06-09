@@ -16,12 +16,10 @@ export default function Home() {
  {trusted.map((person) => {
           
           return (
+  
             <div 
-            key={person.id}
-            className="relative"
-            >
-  <div className="absolute inset-x-0 h-6 bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 blur-xl opacity-60"></div>
-            <div className="bg-slate-800 p-6 rounded-2xl">
+              key={person.id}
+              className="bg-slate-800 p-6 rounded-2xl">
               <h3 className="text-white font-bold text-xl">
                 {person.name}
               </h3>
@@ -30,7 +28,6 @@ export default function Home() {
               {person.description}
               </p>
             </div>
-          </div>
           
         )}
 
