@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Ticker from "../components/Ticker";
 import Divider from "../components/Divider";
+import trusted from "../data/json/trusted.json";
 
 export default function Home() {
   return (
@@ -12,36 +13,29 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
 <p className="text-center mb-4 text-2xl text-black font-bold border-b border-black">People Who Trust Us</p>
           <div className="grid md:grid-cols-3 gap-6">
-
+ {trusted.map((person) => {
+          
+          return (
+            <div 
+            key={person.id}
+            className="relative"
+            >
+  <div className="absolute inset-x-0 h-6 bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 blur-xl opacity-60"></div>
             <div className="bg-slate-800 p-6 rounded-2xl">
               <h3 className="text-white font-bold text-xl">
-                Lorem Ipsum
+                {person.name}
               </h3>
 
               <p className="text-slate-400 mt-3">
-              Lorem Ipsum si dolori amet.
+              {person.description}
               </p>
             </div>
+          </div>
+          
+        )}
 
-            <div className="bg-slate-800 p-6 rounded-2xl">
-              <h3 className="text-white font-bold text-xl">
-                Max Mustermann
-              </h3>
-
-              <p className="text-slate-400 mt-3">
-                Mir gehen die Ideen für Platzhalter aus...
-              </p>
-            </div>
-
-            <div className="bg-slate-800 p-6 rounded-2xl">
-              <h3 className="text-white font-bold text-xl">
-                Etwas Text
-              </h3>
-
-              <p className="text-slate-400 mt-3">
-                Hier könnte ihre Webung stehen...
-              </p>
-            </div>
+      )};
+            
 
           </div>
         </div>
