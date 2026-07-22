@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-black border-t border-slate-800 py-15">
       <div className="max-w-7xl mx-auto px-6 flex flex-col">
         <p className="text-[#009999] text-center">
-          © 2026 ElevenShanghai
+          © 2026 Dein Name
         </p>
 <Link to="https://lokrogaming.github.io">
         <p class="flex flex-row gap-4 text-md text-slate-600 text-center">

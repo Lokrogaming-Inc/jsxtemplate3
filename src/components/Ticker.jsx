@@ -27,7 +27,7 @@ export default function Ticker() {
     },
     {
       icon: Trophy,
-      text: "German Design Award 2025",
+      text: "Cooperative",
     },
   ];
 

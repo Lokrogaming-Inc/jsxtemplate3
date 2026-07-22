@@ -7,14 +7,14 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Desktop Navbar */}
+    {/* Desktop Navbar */}
+     <div className="relative">
+  <div className="absolute inset-x-0 -bottom-3 h-6 bg-gradient-to-r from-gray-400 via-amber-400 via-orange-500 to-red-800 blur-xl opacity-60"></div>
+      
+      
       <nav className="hidden sm:flex items-center justify-between px-6 py-4 bg-black border-b border-[yellow]">
 <Link to="/">        
-      <img
-  src="/logo.png"
-  alt="Eleven"
-  className="h-10 w-auto"
-/></Link>
+      <span className="placeholderBG"></span></Link>
 
         <div className="flex gap-6">
           <Link
@@ -58,9 +58,14 @@ export default function Navbar() {
     </Link>
         </div>
       </nav>
+      </div>
+      
 
       {/* Mobile Navbar */}
-      <nav className="sm:hidden flex items-center justify-between px-4 py-4 bg-black border-b border-[yellow]">
+      <div className="relative sm:hidden">
+      <div className="absolute inset-x-0 -bottom-3 h-6 bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 blur-xl opacity-60"></div>
+
+      <nav className=" flex items-center justify-between px-4 py-4 bg-black border-b border-[yellow]">
 
 <Link to="/">        
 <img
@@ -77,6 +82,7 @@ export default function Navbar() {
           <Menu size={28} />
         </button>
       </nav>
+      </div>
 
       {/* Backdrop */}
       {open && (

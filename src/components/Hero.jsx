@@ -1,108 +1,62 @@
 import {
-     Sparkles,
-     Share2,
-       } from 'lucide-react';
-import { useShare } from '../hooks/useShare';
-
+  Sparkles,
+  Share2,
+} from "lucide-react";
+import { useShare } from "../hooks/useShare";
 
 export default function Hero() {
   const { shareCurrentUrl } = useShare();
-  return (   
- <section className="py-32">
-      
 
+  return (
+    <section
+      className="relative h-screen overflow-hidden bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/motocross.jpg')",
+      }}
+    >
+      {/* Dunkler + leicht brauner Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-amber-900/20 mix-blend-multiply"></div>
 
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      {/* Inhalt */}
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6">
 
-        <span
-  className="
-    inline-flex
-    items-center
-    justify-center
-    border
-    border-black
-    rounded-full
-    px-4
-    py-2
-    w-30
-  "
->
-  <img
-    src="/logo.png"
-    alt="Eleven Logo"
-    className="h-5 w-auto"
-  />
-</span>
-
-        <h1 className="mt-8 text-6xl text-black font-black">
-          ELEVEN (Shanghai)
-        </h1>
-
-        <p className="mt-6 text-slate-400 text-lg max-w-2xl mx-auto">
-          Many projects around the world, featuring the Azerbaijan Pavilion at the Expo 2025 and many more! 
-        </p>
-
-        <div className="mt-10 flex justify-center gap-4">
-          <button className="bg-[#111] border-black border transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-black hover:text-white text-slate-400 px-6 py-3 rounded-xl">
-            Get in Touch
-          </button>
-          <button onClick={() =>
-        shareCurrentUrl({
-          title: "Eleven (Shanghai)",
-          text: "From the first sketch to the last brick",
-        })
-      } 
-  className="text-black text-lg transition-transform duration-300 ease-in-out hover:scale-110 hover:border-b hover:border-black">
-<Share2 />
-</button> 
-          
-
-<button
-  className="
-    relative
-    overflow-hidden
-    border
-    border-black
-    px-6
-    py-3
-    rounded-xl
-    group
-    hover:scale-110
-    transition-transform
-    duration-300
-    ease-in-out
-  "
->
-  <div
-  className="
-    absolute
-    inset-0
-    bg-gradient-to-r
-    from-[#333]
-    to-black
-    origin-left
-    scale-x-0
-    transition-transform
-    duration-300
-    group-hover:scale-x-100
-  "
-/>
-
-  <span
-    className="
-      relative
-      z-10
-      transition-colors
-      duration-1000
-      group-hover:text-white
-    "
-  >
-    Learn More
-  </span>
-</button>
-
+        {/* Schwebender Logo-Container */}
+        <div className="mb-8 rounded-3xl border border-white/10 bg-orange-600/5 p-6 shadow-2xl backdrop-blur-xl">
+          <img
+            src="/favicon.svg"
+            alt="Logo"
+            className="h-28 w-28 object-contain"
+          />
         </div>
 
+        <h1 className="text-center text-5xl font-bold text-white md:text-7xl">
+          Dein Titel
+        </h1>
+
+        <p className="mt-6 max-w-2xl text-center text-lg text-white/80">
+          Hier kommt deine Beschreibung hin.
+        </p>
+
+        <div className="mt-10 flex gap-4">
+          <button className="rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:scale-105">
+            Loslegen
+          </button>
+
+          <button
+            onClick={shareCurrentUrl}
+            className="flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-white backdrop-blur transition hover:bg-white/20"
+          >
+            <Share2 size={18} />
+            Teilen
+          </button>
+        </div>
+
+        {/* Optionales Badge */}
+        <div className="font-fruktur mt-8 flex items-center gap-2 rounded-full border border-yellow-400/20 bg-yellow-500/10 px-4 py-2 text-yellow-300 backdrop-blur">
+          <Sparkles size={16} />
+          JXSTEMPLATE
+        </div>
       </div>
     </section>
   );

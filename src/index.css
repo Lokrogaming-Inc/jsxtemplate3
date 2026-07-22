@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Ballet:opsz@16..72&family=Fruktur:ital@0;1&family=Manufacturing+Consent&family=Medula+One&family=Monsieur+La+Doulaise&family=Pirata+One&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=UnifrakturCook:wght@700&display=swap');
 
 :root {
   --primary: #2563eb;
@@ -9,6 +10,21 @@
 @theme {
 --color-primary: #ffc900;
 }
+@import "tailwindcss";
+
+@theme {
+  --font-archivo: "Archivo Black", sans-serif;
+  --font-quantico: "Quantico", sans-serif;
+  --font-press: "Press Start 2P", cursive;
+  --font-fruktur: "Fruktur", cursive;
+  --font-medula: "Medula One", sans-serif;
+  --font-unifraktur: "UnifrakturCook", cursive;
+  --font-pirata: "Pirata One", cursive;
+  --font-manufacturing: "Manufacturing Consent", sans-serif;
+  --font-ballet: "Ballet", cursive;
+  --font-monsieur: "Monsieur La Doulaise", cursive;
+}
+
 
 @keyframes ticker {
   from {
@@ -19,7 +35,13 @@
     transform: translateX(-50%);
   }
 }
-
+.placeholderBG {
+  --color: rgba(255,255,255,.15);
+  background-image:
+      linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 40px 40px;
+}
 .animate-ticker {
   animation: ticker 20s linear infinite;
 }

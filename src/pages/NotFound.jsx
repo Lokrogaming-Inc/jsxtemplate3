@@ -3,6 +3,19 @@ import { TriangleAlert } from "lucide-react";
 
 export default function NotFound() {
   return (
+    <section
+  className="relative min-h-screen overflow-hidden bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/motocross.jpg')",
+      }}
+    >
+      {/* Dunkler + leicht brauner Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-amber-900/20 mix-blend-multiply"></div>
+
+      {/* Inhalt */}
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6">
+
     <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 my-10 text-center">
 
       <TriangleAlert
@@ -10,15 +23,15 @@ export default function NotFound() {
         className="text-red-500 mb-6"
       />
 
-      <h1 className="text-7xl font-bold text-black">
+      <h1 className="text-7xl font-bold text-white">
         404
       </h1>
 
-     <h3 className="text-3xl font-bold text-black">
+     <h3 className="text-3xl font-bold text-white">
       We're sorry, but...
      </h3>
 
-      <h2 className="mt-4 text-2xl font-semibold text-black">
+      <h2 className="mt-4 text-2xl font-semibold text-white">
      Site not found
       </h2>
 
@@ -34,5 +47,8 @@ export default function NotFound() {
       </Link>
 
     </div>
+    </div>
+    </section>
+    
   );
 }

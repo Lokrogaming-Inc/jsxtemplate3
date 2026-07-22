@@ -44,10 +44,23 @@ const memberCount = teamMembers.length;
 export default function Team() {
   return (
     <>
-      <div className="flex flex-col gap-10 text-center text-black font-bold mt-10 items-center">
+    <section
+  className="relative min-h-screen overflow-hidden bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/motocross.jpg')",
+      }}
+    >
+      {/* Dunkler + leicht brauner Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-amber-900/20 mix-blend-multiply"></div>
+
+      {/* Inhalt */}
+      <div className="relative z-10 flex h-full flex-col items-center justify-center px-6">
+
+      <div className="flex flex-col gap-10 text-center text-white font-bold mt-10 items-center">
         <Sparkles size={64} />
-        <p className="text-4xl font-bold">Our Team</p>
-        <p className="text-lg">{memberCount} registered members</p>
+        <p className="text-white text-4xl font-bold">Our Team</p>
+        <p className="text-white text-lg">{memberCount} registered members</p>
       </div>
 
       <div className="grid grid-rows-2 sm:grid-rows-1 gap-10 my-10">
@@ -155,6 +168,8 @@ export default function Team() {
           );
         })}
       </div>
+      </div>
+      </section>
     </>
   );
 }
