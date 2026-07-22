@@ -24,6 +24,40 @@
   --font-ballet: "Ballet", cursive;
   --font-monsieur: "Monsieur La Doulaise", cursive;
 }
+@theme {
+  --animate-float2: float2 1.5s ease-in-out infinite;
+
+  @keyframes float2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+ }
+}
+@theme {
+  --animate-float: float 1.5s ease-in-out infinite;
+
+  @keyframes float {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -40px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 30px) scale(0.95);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+}
+
 
 
 @keyframes ticker {
@@ -77,17 +111,5 @@
 }
 
 /* Animation */
-@keyframes float {
-  0% {
-    transform: translate(0px, 0px) scale(1);
-  }
-  33% {
-    transform: translate(30px, -40px) scale(1.1);
-  }
-  66% {
-    transform: translate(-20px, 30px) scale(0.95);
-  }
-  100% {
-    transform: translate(0px, 0px) scale(1);
-  }
-}
+
+

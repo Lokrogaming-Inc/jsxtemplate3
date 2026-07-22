@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/bash
+#!/bin/bash
 
 echo "## Projektstruktur" > STRUCTURE.md
 echo '```text' >> STRUCTURE.md
