@@ -1,6 +1,65 @@
 ## Projektstruktur
 ```text
+.
+./.git
+./.gitattributes
+./.github
+./.github/workflows
+./.github/workflows/screenshots.yml
+./.gitignore
+./components.json
+./eslint.config.js
+./index.html
+./LICENSE
+./node_modules
+./package-lock.json
+./package.json
+./public
+./public/favicon.svg
+./public/icons.svg
+./public/logo.png
+./public/motocross.jpg
+./push.sh
+./README.md
+./screenshot.mjs
+./screenshots
+./screenshots/.gitkeep
+./screenshots/home.png
+./screenshots/team.png
+./src
+./src/App.css
+./src/App.jsx
+./src/components
+./src/components/App.jsx
+./src/components/ContactSkeleton.jsx
+./src/components/Divider.jsx
+./src/components/Footer.jsx
+./src/components/Hero.jsx
+./src/components/HeroBackground.jsx
+./src/components/Nav.jsx
+./src/components/Navbar.jsx
+./src/components/Ticker.jsx
+./src/data
+./src/data/json
+./src/hooks
+./src/hooks/useShare.jsx
+./src/index.css
+./src/main.jsx
+./src/pages
+./src/pages/About.jsx
+./src/pages/Contact.jsx
+./src/pages/Home.jsx
+./src/pages/NotFound.jsx
+./src/pages/Success.jsx
+./src/pages/Team.jsx
+./STRUCTURE.md
+./tailwind
+./tailwind.config.js
+./take-screenshot.sh
+./todo.md
+./update-readme.sh
+./vite.config.js
 ```
 
 
-🕒 Last update: 2026-07-22 22:39:42
+🕒 Last update: 2026-07-22 22:41:52
