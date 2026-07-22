@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ELEVEN (Shanghai) Website
 ![Logo](/public/logo.png)
 
@@ -107,3 +108,7 @@ shareCurrentUrl({
 ## Visitors
 
 ![Visitors](https://count.getloli.com/@eleven-shanghai?name=eleven-shanghai&theme=e621&padding=7&offset=3&align=center&scale=1&pixelated=0&darkmode=1)
+=======
+# jsxtemplate
+
+>>>>>>> 4b9cb10c25f72f2df4838c4c6f9860ff524068a5
