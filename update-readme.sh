@@ -2,7 +2,14 @@
 
 echo "## Projektstruktur" > STRUCTURE.md
 echo '```text' >> STRUCTURE.md
-tree -L 3 -I 'node_modules|dist|.git' >> STRUCTURE.md
+
+find . \
+  -maxdepth 3 \
+  -not -path "./node_modules/*" \
+  -not -path "./dist/*" \
+  -not -path "./.git/*" \
+  >> STRUCTURE.md
+
 echo '```' >> STRUCTURE.md
 echo "" >> STRUCTURE.md
 echo "" >> STRUCTURE.md
