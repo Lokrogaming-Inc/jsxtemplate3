@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-# ELEVEN (Shanghai) Website
-![Logo](/public/logo.png)
 
-![Stars](https://img.shields.io/github/stars/Lokrogaming/eleven-shanghai) &nbsp;
-![Languages](https://img.shields.io/github/languages/count/Lokrogaming/eleven-shanghai) &nbsp;
-![Top Language](https://img.shields.io/github/languages/top/Lokrogaming/eleven-shanghai) &nbsp;
-![Last Commit](https://img.shields.io/github/last-commit/Lokrogaming/eleven-shanghai) &nbsp;
+
+![Stars](https://img.shields.io/github/stars/Lokrogaming-Inc/jsxtemplate3) &nbsp;
+![Languages](https://img.shields.io/github/languages/count/Lokrogaming-Inc/jsxtemplate3) &nbsp;
+![Top Language](https://img.shields.io/github/languages/top/Lokrogaming-Inc/jsxtemplate3) &nbsp;
+![Last Commit](https://img.shields.io/github/last-commit/Lokrogaming-Inc/jsxtemplate3) &nbsp;
 
 
 ##  📋 Versions
@@ -107,8 +105,7 @@ shareCurrentUrl({
 
 ## Visitors
 
-![Visitors](https://count.getloli.com/@eleven-shanghai?name=eleven-shanghai&theme=e621&padding=7&offset=3&align=center&scale=1&pixelated=0&darkmode=1)
+![Visitors](https://count.getloli.com/@LokrogamingInc-Jsxtemapate3?name=eleven-shanghai&theme=e621&padding=7&offset=3&align=center&scale=1&pixelated=0&darkmode=1)
 =======
-# jsxtemplate
 
->>>>>>> 4b9cb10c25f72f2df4838c4c6f9860ff524068a5
+# jsxtemplate
